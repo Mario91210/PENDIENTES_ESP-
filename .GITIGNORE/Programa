@@ -1,1 +1,29 @@
+import openpyxl
+import PIL
+
+
+#ESP es abreviación de Ejido La Esperanza
+doc = openpyxl.lod_workbook("ESP")
+
+
+selecciom = hoja['B2':'D5']
+for fials in seleccion:
+    for columnas in filas:
+        print (columnas.coordinate, columnas.valie)
+    print ("---Final de Fila---")
+
+
+#Si desea ver la imagen del área de estudio indique "y"
+run = raw_input("Desea ver el Ejido de estudio y/n\n")
+
+
+from PIL import Image
+
+
+#Para que la imagen pueda ser expuesta deberá de indicarse con el nombre de la imagen
+def show(path_name):
+    image = ()
+image.open(path_name)=
+    image.show()
+show()
 
