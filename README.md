@@ -126,7 +126,7 @@ https://www.arcgis.com)
 
 POSTER DE REPRESENTACION DEL PROYECTO
 
-![PalabrasdelTextoAlternativo](https://github.com/Mario91210/PENDIENTES_ESP-/blob/master/poster.png)
+![PalabrasdelTextoAlternativo](https://github.com/Mario91210/PENDIENTES_ESP-/blob/master/IMAGENES/poster1.jpg)
 
 
 
