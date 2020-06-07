@@ -80,19 +80,18 @@ Con la tabla mostrada anteriormente, generamos unas graficas en la que se pudem 
 El código completo se anexa en el si-guiente párrafo
 
 import openpyxl
-
 import PIL
-
 importar pandas
-
 importar  matpltlib
 
 workbook = "proyectoespecial.xlsx"
+
 df = pd.read_excel(workbook)
 
 print(df.head())
 
 valores = df[["Pendiente","Porcentaje"]]
+
 print(valores)
 
 ax = valores.plot.bar(x = "Pendiente", y = "Porcentaje", rot = 0)
