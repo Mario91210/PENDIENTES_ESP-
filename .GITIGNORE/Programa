@@ -1,17 +1,18 @@
 import openpyxl
 import PIL
+import pandas
+import matplotlib
 
+workbook = "proyectoespecial.xlsx"
+df = pd.read_excel(workbook)
 
-#ESP es abreviación de Ejido La Esperanza
-doc = openpyxl.lod_workbook("ESP")
+print(df.head())
 
+valores = df[["Pendiente","Porcentaje"]]
+print(valores)
 
-selecciom = hoja['B2':'D5']
-for fials in seleccion:
-    for columnas in filas:
-        print (columnas.coordinate, columnas.valie)
-    print ("---Final de Fila---")
-
+ax = valores.plot.bar(x = "Pendiente", y = "Porcentaje", rot = 0)
+plt.show()
 
 #Si desea ver la imagen del área de estudio indique "y"
 run = raw_input("Desea ver el Ejido de estudio y/n\n")
