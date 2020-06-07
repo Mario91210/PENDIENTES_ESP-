@@ -8,7 +8,7 @@ Campus Coquimatlán, 28400
 
 "Facultad de Ingeniería Civil, PE-ITG..." Programa educativo Ingeniero Topografo Geomatico"
 
-#	LA AGRICULTURA “EJIDO LA ESPERANZA”
+#	LECTURA DE DATOS DE PENDIENTES DESDE EXCEL PARA LA AGRICULTURA DEL EJIDO LA ESPERANZA
 
 Muestra los datos obtenidos de obtención de las pendientes del Ejido la Esperanza y finalmente poder mostrar una imagen de dicho Ejido.
 
@@ -83,19 +83,20 @@ import openpyxl
 
 import PIL
 
-ESP es abreviación de Ejido La Esperanza
+importar pandas
 
-doc = openpyxl.lod_workbook("ESP")
+importar  matpltlib
 
-selecciom = hoja['B2':'D5']
+workbook = "proyectoespecial.xlsx"
+df = pd.read_excel(workbook)
 
-for fials in seleccion:
+print(df.head())
 
-    for columnas in filas:
+valores = df[["Pendiente","Porcentaje"]]
+print(valores)
 
-        print (columnas.coordinate, columnas.valie)
-        
-    print ("---Final de Fila---")
+ax = valores.plot.bar(x = "Pendiente", y = "Porcentaje", rot = 0)
+plt.show()
     
 Si desea ver la imagen del area de estudio indique "y"
 
