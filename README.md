@@ -98,6 +98,7 @@ valores = df[["Pendiente","Porcentaje"]]
 print(valores)
 
 ax = valores.plot.bar(x = "Pendiente", y = "Porcentaje", rot = 0)
+
 plt.show()
     
 Si desea ver la imagen del area de estudio indique "y"
