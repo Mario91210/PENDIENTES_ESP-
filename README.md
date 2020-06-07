@@ -80,8 +80,11 @@ Con la tabla mostrada anteriormente, generamos unas graficas en la que se pudem 
 El código completo se anexa en el si-guiente párrafo
 
 import openpyxl
+
 import PIL
+
 importar pandas
+
 importar  matpltlib
 
 workbook = "proyectoespecial.xlsx"
